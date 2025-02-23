@@ -14,6 +14,7 @@ body {
     font-family: 'circular-web';
     src: url('/fonts/circularweb-book.woff2') format('woff2'),
   }
+
   @font-face {
     font-family: 'Zentry';
     src: url('/fonts/zentry-regular.woff2') format('woff2'),
@@ -35,8 +36,14 @@ body {
   }
 }
 
+.floating-nav {
+  background: rgba(0, 0, 0, 0.9) !important;
+  /* Force background with !important */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
 
-
+ 
 @layer utilities {
   .border-hsla {
     @apply border border-white/20;
